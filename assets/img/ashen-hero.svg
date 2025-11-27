@@ -1,0 +1,26 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1a2333"/>
+      <stop offset="100%" stop-color="#0c0f1c"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6ac5ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0c0f1c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#light)"/>
+  <g stroke="#a98bff" stroke-width="4" fill="none" opacity="0.6">
+    <path d="M120 360 Q220 220 360 260 T640 200"/>
+    <path d="M200 380 Q340 300 520 330 T700 280"/>
+  </g>
+  <circle cx="420" cy="220" r="90" fill="#8be0c2" opacity="0.18"/>
+  <rect x="380" y="110" width="80" height="140" fill="#f5c542" rx="18"/>
+  <rect x="360" y="250" width="120" height="140" fill="#6ac5ff" rx="22"/>
+  <rect x="345" y="260" width="30" height="120" fill="#c496ff"/>
+  <rect x="525" y="280" width="50" height="110" fill="#f5c542" opacity="0.6"/>
+  <rect x="300" y="290" width="40" height="90" fill="#88e0b8" opacity="0.7"/>
+  <text x="30" y="60" fill="#c1d4ff" font-family="'Segoe UI', sans-serif" font-size="42" letter-spacing="4">Ashen Throne</text>
+  <text x="32" y="100" fill="#8be0c2" font-family="'Segoe UI', sans-serif" font-size="20">Mystic fire & forgotten royalty</text>
+</svg>

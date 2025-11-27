@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "outDir": "dist/scripts",
+    "rootDir": "src/scripts",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/scripts/**/*"]
+}

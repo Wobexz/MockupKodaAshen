@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashen Throne — KODA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles/main.css" />
+</head>
+<body class="theme-dark game-page">
+  <div class="noise-overlay"></div>
+  <header class="site-header">
+    <div class="logo">KODA</div>
+    <nav class="nav">
+      <a href="index.html#projects">← Back</a>
+      <a href="#story">Story</a>
+      <a href="#features">Features</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#cta">Wishlist</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero--ashen" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="particle-layer" data-depth="0.2"></div>
+        <div class="particle-layer" data-depth="0.35"></div>
+        <div class="glow glow--ashen"></div>
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow">Ashen Throne</p>
+        <h1 class="hero__title">Claim the crown from smoldering shadows</h1>
+        <p class="hero__subtitle">An atmospheric action RPG where embersteel weapons and ancient spirits collide inside a shifting citadel.</p>
+        <div class="hero__cta">
+          <a class="btn btn-primary" href="#cta">Wishlist / Coming Soon</a>
+          <a class="btn btn-ghost" href="index.html">Back to KODA</a>
+        </div>
+      </div>
+      <div class="hero__character" aria-hidden="true">
+        <div class="character-card" id="character-card-ashen">
+          <img src="assets/img/ashen-hero.svg" alt="Ashen hero" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="story">
+      <div class="section__header">
+        <p class="eyebrow">Lore</p>
+        <h2>Smoldering myths and fractured heirs</h2>
+      </div>
+      <div class="section__grid">
+        <p class="lead">The Ashen Throne lies dormant under a citadel that rearranges itself each dusk. Whispered spirits test every challenger with puzzles, blades, and a patience for the void. You will bind ash to steel, awaken lost guardians, and decide which houses rise with the dawn.</p>
+        <p class="muted">Every corridor breathes. Walls shift in real time, embers trail your movement, and the castle keeps score of your style. Parry to stoke the light, dodge to thin the smoke, and unleash signature finishers against colossal relics.</p>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section__header">
+        <p class="eyebrow">Features</p>
+        <h2>Combat, exploration, mastery</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card" data-animate>
+          <h3>Responsive combat</h3>
+          <p>Cancel-friendly moves, timing windows that reward flow, and weapon stances bound to ember energy.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <h3>Living level design</h3>
+          <p>Procedural room links with hand-authored set-pieces, shifting routes, and dynamic lantern fog.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <h3>Progression</h3>
+          <p>Sigil trees, relic loadouts, and companions whose trust rewrites boss patterns.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <h3>Atmosphere</h3>
+          <p>Reactive ash particles, spectral choirs, and painterly pixels designed for OLED glow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section__header">
+        <p class="eyebrow">Screenshots</p>
+        <h2>Glimpses inside the citadel</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="assets/img/ashen-hero.svg" alt="Ashen Throne scene" data-animate />
+        <img src="assets/img/project-placeholder.svg" alt="Combat preview" data-animate />
+        <img src="assets/img/project-placeholder.svg" alt="Exploration preview" data-animate />
+      </div>
+    </section>
+
+    <section class="section cta" id="cta">
+      <div class="cta__content" data-animate>
+        <p class="eyebrow">Wishlist</p>
+        <h2>Kindle the Ashen Throne</h2>
+        <p class="lead">Follow the journey on your favorite store. Wishlist to fuel our climb and unlock dev diaries.</p>
+        <div class="hero__cta">
+          <a class="btn btn-primary" href="#">Wishlist (Coming Soon)</a>
+          <a class="btn btn-ghost" href="index.html">Back to studio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">KODA</div>
+    <p>Ashen Throne — forged by KODA.</p>
+    <p class="footer__meta">© 2024 KODA Studio.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="dist/scripts/ashen.js"></script>
+</body>
+</html>
