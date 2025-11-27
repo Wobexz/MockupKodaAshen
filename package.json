@@ -1,0 +1,15 @@
+{
+  "name": "koda-studio-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass --no-source-map src/scss:public/css",
+    "build:ts": "tsc",
+    "build": "npm run build:css && npm run build:ts",
+    "clean": "rm -rf public/css public/js && mkdir -p public/css public/js"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "typescript": "^5.4.0"
+  }
+}

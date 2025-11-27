@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KODA Studio | Indie Worlds Forged</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="topbar">
+    <div class="logo">KODA</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__text">
+          <p class="eyebrow">Indie game studio</p>
+          <h1 class="headline">KODA — Crafting moody, living worlds with radical polish.</h1>
+          <p class="lead">We build highly stylized, mechanically rich experiences that glow with atmosphere, responsive animation, and narrative depth.</p>
+          <div class="hero__cta">
+            <a class="btn primary" href="#projects">Our Projects</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="hero__character" data-tilt>
+          <div class="character__shadow"></div>
+          <div class="character__card">
+            <img src="assets/images/koda-hero.svg" alt="KODA pixel hero" />
+          </div>
+          <div class="floating floating--one"></div>
+          <div class="floating floating--two"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section__header">
+        <p class="eyebrow">About us</p>
+        <h2>Worldbuilders with a taste for cinematic edge</h2>
+      </div>
+      <p class="section__lead">KODA is a boutique studio blending painterly art direction, tactile combat systems, and luminous audio to deliver unforgettable indie experiences. Our small team of designers, artists, and engineers obsess over every animation curve to make your heart skip.</p>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section__header">
+        <p class="eyebrow">Projects</p>
+        <h2>Immersive titles forged in-house</h2>
+      </div>
+      <div class="projects__grid">
+        <article class="project-card" data-project>
+          <div class="card__badge">Featured</div>
+          <img src="assets/images/ashen-hero.svg" alt="Ashen Throne key art" />
+          <div class="card__body">
+            <h3>Ashen Throne</h3>
+            <p>Brutalist ruins, molten skies, and a lone royal guardian battling the ash tide.</p>
+            <a class="btn text" href="ashen-throne.html">Explore</a>
+          </div>
+        </article>
+        <article class="project-card" data-project>
+          <div class="card__badge muted">Release Soon</div>
+          <div class="card__placeholder">Neon Bloom</div>
+          <div class="card__body">
+            <h3>Neon Bloom</h3>
+            <p>Bioluminescent rogue-like drifting through procedurally grown cities.</p>
+          </div>
+        </article>
+        <article class="project-card" data-project>
+          <div class="card__badge muted">Release Soon</div>
+          <div class="card__placeholder">Silk Signal</div>
+          <div class="card__body">
+            <h3>Silk Signal</h3>
+            <p>A gothic stealth adventure woven through radio wave spirits.</p>
+          </div>
+        </article>
+        <article class="project-card" data-project>
+          <div class="card__badge muted">Release Soon</div>
+          <div class="card__placeholder">Blue Ember</div>
+          <div class="card__body">
+            <h3>Blue Ember</h3>
+            <p>Frostbitten exploration with ember-powered relics and soaring traversal.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__panel">
+        <div class="section__header">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build the next universe together</h2>
+        </div>
+        <form class="contact__form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@studio.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us about your idea"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">KODA Studio — crafted in pixels &amp; poetry</div>
+    <div class="footer__meta">contact@koda.studio · @koda.games</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="public/js/main.js"></script>
+</body>
+</html>
