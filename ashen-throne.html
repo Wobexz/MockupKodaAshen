@@ -6,7 +6,7 @@
   <title>Ashen Throne | KODA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Clash+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="public/css/ashen.css">
 </head>
 <body class="ashen">
@@ -25,19 +25,24 @@
     <section class="hero" id="top">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__content">
-        <div class="hero__text">
+        <div class="hero__text" data-hero-stagger>
           <p class="eyebrow">Ashen Throne</p>
           <h1 class="headline">Rise from the ember and reclaim the silent throne.</h1>
           <p class="lead">A ritualistic action adventure where molten winds carve through monolithic citadels and every swing leaves trails of light.</p>
-          <div class="hero__cta">
+          <div class="hero__cta" data-hero-stagger>
             <a class="btn primary" href="#features">Core Features</a>
             <a class="btn ghost" href="#gallery">View Gallery</a>
           </div>
+          <div class="hero__meta" data-hero-stagger>
+            <span class="pill">Ash storms</span>
+            <span class="pill">Precision steel</span>
+            <span class="pill">Runic lore</span>
+          </div>
         </div>
-        <div class="hero__visual">
+        <div class="hero__visual" data-float>
           <img src="assets/images/ashen-hero.svg" alt="Ashen Throne hero" />
-          <div class="floating floating--one"></div>
-          <div class="floating floating--two"></div>
+          <div class="floating floating--one" data-parallax></div>
+          <div class="floating floating--two" data-parallax></div>
         </div>
       </div>
     </section>
@@ -47,7 +52,32 @@
         <p class="eyebrow">Story</p>
         <h2>When the crown dims, the ash remembers</h2>
       </div>
-      <p class="section__lead">Traverse an empire turned to charcoal. Embers whisper ancient oaths as you unearth memories of the lost sovereigns, crafting runic blades and making alliances with wandering spirits.</p>
+      <div class="section__grid">
+        <p class="section__lead" data-reveal>Traverse an empire turned to charcoal. Embers whisper ancient oaths as you unearth memories of the lost sovereigns, crafting runic blades and making alliances with wandering spirits.</p>
+        <div class="list" data-reveal>
+          <div class="list__item">
+            <span class="list__bullet"></span>
+            <div>
+              <h3>Fallen dominion</h3>
+              <p>Citadels shattered mid-ascension, bridges cracked by dormant giants.</p>
+            </div>
+          </div>
+          <div class="list__item">
+            <span class="list__bullet"></span>
+            <div>
+              <h3>Living ash</h3>
+              <p>Weather that stalks you; storms shift with your choices and momentum.</p>
+            </div>
+          </div>
+          <div class="list__item">
+            <span class="list__bullet"></span>
+            <div>
+              <h3>Haunted allies</h3>
+              <p>Spirits remember debts; negotiate through combat, gestures, and offerings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="features" id="features">
@@ -58,7 +88,7 @@
       <div class="feature-grid">
         <article class="feature" data-feature>
           <h3>Precision combat</h3>
-          <p>Chain together perfect parries, aerial dashes, and ember-fueled finishers that shower the sky with sparks.</p>
+          <p>Chain perfect parries, aerial dashes, and ember-fueled finishers that shower the sky with sparks.</p>
         </article>
         <article class="feature" data-feature>
           <h3>Exploration</h3>
@@ -97,7 +127,7 @@
     </section>
 
     <section class="cta" id="cta">
-      <div class="cta__content">
+      <div class="cta__content" data-reveal>
         <h2>Wishlist Ashen Throne</h2>
         <p>Follow development and be the first to step into the glowing dust.</p>
         <div class="hero__cta">

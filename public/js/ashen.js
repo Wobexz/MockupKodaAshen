@@ -1,2 +1,51 @@
-const gsapAlias=gsap;gsapAlias.registerPlugin(ScrollTrigger);
-document.addEventListener('DOMContentLoaded',()=>{const heroBg=document.querySelector('.hero__bg');if(heroBg){const sparkles=document.createElement('div');sparkles.className='sparkles';heroBg.appendChild(sparkles);window.addEventListener('pointermove',event=>{const x=(event.clientX/window.innerWidth-.5)*22;const y=(event.clientY/window.innerHeight-.5)*22;gsapAlias.to(heroBg,{x,y,duration:.8,ease:'power2.out'});gsapAlias.to(sparkles,{x:-x*.6,y:-y*.6,duration:1,ease:'power2.out'})})}const heroElements=document.querySelectorAll('.hero__text > *, .hero__visual');gsapAlias.from(heroElements,{y:40,opacity:0,duration:1,stagger:.08,ease:'power3.out'});const features=gsapAlias.utils.toArray('[data-feature]');features.forEach(feature=>{gsapAlias.fromTo(feature,{y:30,opacity:0},{y:0,opacity:1,duration:.9,ease:'power3.out',scrollTrigger:{trigger:feature,start:'top 85%'}})});const galleryItems=gsapAlias.utils.toArray('[data-gallery]');galleryItems.forEach(item=>{gsapAlias.fromTo(item,{y:30,opacity:0},{y:0,opacity:1,duration:.9,ease:'power3.out',scrollTrigger:{trigger:item,start:'top 85%'}})})});
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const heroBg = document.querySelector(".hero__bg");
+  if (heroBg) {
+    const sparkles = document.createElement("div");
+    sparkles.className = "sparkles";
+    heroBg.appendChild(sparkles);
+    window.addEventListener("pointermove", (event) => {
+      const x = (event.clientX / window.innerWidth - 0.5) * 24;
+      const y = (event.clientY / window.innerHeight - 0.5) * 24;
+      gsap.to(heroBg, { x, y, duration: 1, ease: "power2.out" });
+      gsap.to(sparkles, { x: -x * .6, y: -y * .6, duration: 1.1, ease: "power2.out" });
+    });
+  }
+  const heroElements = document.querySelectorAll("[data-hero-stagger], .headline");
+  gsap.from(heroElements, { y: 32, opacity: 0, duration: 1.2, stagger: 0.08, ease: "power3.out" });
+  const floaters = document.querySelectorAll("[data-float]");
+  floaters.forEach((el) => {
+    gsap.to(el, { y: -14, duration: 3.5, repeat: -1, yoyo: true, ease: "sine.inOut" });
+  });
+  const features = gsap.utils.toArray("[data-feature]");
+  features.forEach((feature) => {
+    gsap.to(feature, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: { trigger: feature, start: "top 85%" }
+    });
+  });
+  const galleryItems = gsap.utils.toArray("[data-gallery]");
+  galleryItems.forEach((item) => {
+    gsap.to(item, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: { trigger: item, start: "top 85%" }
+    });
+  });
+  const revealBlocks = gsap.utils.toArray("[data-reveal]");
+  revealBlocks.forEach((block) => {
+    gsap.to(block, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: { trigger: block, start: "top 85%" }
+    });
+  });
+});
